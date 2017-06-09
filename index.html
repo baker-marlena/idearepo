@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="http://fastly.ink.sapo.pt/3.1.10/css/ink.css"> <!-- inks css file -->
+    <script type="text/javascript" src="http://fastly.ink.sapo.pt/3.1.10/js/ink-all.js"></script> <!-- inks js bundle -->
+    <title>Idea Repo</title>
+  </head>
+  <body>
+    <nav id="my-sticky" class="ink-navigation ink-sticky bottom-space" data-bottom-element="#bottom-element"
+        data-offset-top="60">
+    <ul class="menu horizontal black">
+        <li><a href="#">Idea Repo</a></li>
+    </ul>
+  </nav>
+  <main class="ink-grid">
+    <div class="column-group gutters">
+      <div class="all-25">
+        <form class="ink-form">
+          <div class="control-group">
+            <label for="search">Search</label>
+            <div class="control">
+              <input id="search" name="search" type="text" placeholder="Type some text">
+            </div>
+          </div>
+          <button type="button" name="button" class="ink-button orange">Search</button>
+        </form>
+        <h2>Browse by Tags</h2>
+        <ul id="tag-list" class="unstyled">
+        </ul>
+      </div>
+      <div class="all-75">
+        <form class="ink-form submission-form gutter-bottom" onsubmit="acceptSubmission()">
+          <div class="column-group gutters">
+            <div class="control-group all-50 validation warning">
+              <label for="submission-title">Title</label>
+              <div class="control">
+                <input type="text" name="submission-title" id="submission-title">
+              </div>
+            </div>
+            <div class="control-group all-50">
+              <label for="submission-tags">Tags</label>
+              <div class="control">
+                <input type="text" name="submission-tags" id="submission-tags">
+                <p class="tip">Seperate tags with commas.</p>
+              </div>
+            </div>
+          </div>
+          <div class="control-group validation warning">
+            <label for="submission">Idea</label>
+            <div class="control">
+              <input id="submission" name="submission" type="textarea" placeholder="Gimme something">
+            </div>
+          </div>
+          <button class="ink-button orange">Button</button>
+        </form>
+        <div id="results">
+          <div id="results-tags"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+  <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
